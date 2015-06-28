@@ -1,0 +1,42 @@
+{
+    "name": "circulon/yii2-columnlistview",
+    "description": "Responsive columnar List View for Yii 2.x",
+    "keywords": [
+        "circulon",
+        "yii",
+        "yii2",
+        "yii 2",
+        "listview",
+        "list view",
+        "responsive",
+        "column",
+        "columns"
+    ],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "homepage": "https://github.com/circulon/yii2-columnlistview.git",
+    "authors": [
+        {
+            "name": "Kieren Eaton",
+            "email": "circledev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "circulon\\widgets\\": ""
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
