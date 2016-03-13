@@ -28,7 +28,7 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
-## Basic Usage
+## Basic usage
 ```php
     use circulon\widgets\ColumnListView;
     
@@ -45,7 +45,9 @@ The above example will generate a listview with the following layout per device 
 - sm (Phone) 2 columns
 - xs 1 column
 
-## Advanced Usage
+## Advanced usage
+
+### Custom layout
 
 Creating your own column layout is easy to do.
 
@@ -67,5 +69,31 @@ The setup of the columnsLayout var is as follows
 Generally I find it easier to layout columns for Tablet ('md' / SIZE_MEDIUM) then 
 scale up for large and down for small and tiny devices.
 
-Check the source for additional size layouts
-  
+Check the source for additional size layouts.
+
+### Custom CSS classes for columns
+
+For example, if you to render something like this using 3 clumns:
+
+```html
+  <div class="row">
+    ...
+    <div class="col-lg-4 col-xs-12" data-key="...">
+      ...
+    </div>
+    ...
+  </div>
+```
+
+You must set uo your widget as follows:
+
+```php
+  echo ColumnListView::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => 3,
+    'itemOptions' => [
+      'class' => 'col-lg-4 col-xs-12',
+    ],
+  'itemView' => 'item',
+  ]);
+```
