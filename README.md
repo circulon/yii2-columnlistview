@@ -73,7 +73,7 @@ Check the source for additional size layouts.
 
 ### Custom CSS classes for columns
 
-For example, if you to render something like this using 3 clumns:
+For example, if you want to render something like this using 3 clumns:
 
 ```html
   <div class="row">
@@ -85,7 +85,7 @@ For example, if you to render something like this using 3 clumns:
   </div>
 ```
 
-You must set uo your widget as follows:
+You must set up your widget as follows:
 
 ```php
   echo ColumnListView::widget([
