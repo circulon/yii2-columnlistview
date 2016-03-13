@@ -73,7 +73,7 @@ Check the source for additional size layouts.
 
 ### Custom CSS classes for columns
 
-For example, if you want to render something like this:
+For example, if you want to render 3 columns using a custom CSS class:
 
 ```html
   <div class="row">
