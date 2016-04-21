@@ -125,7 +125,7 @@ class ColumnListView extends \yii\widgets\ListView
         }
       }
 
-      return ['class' => $opts];
+      return ['class' => trim($opts)];
     }
 
 
